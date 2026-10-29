@@ -3,197 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zayk Systems | Desenvolvimento de Sites e Landing Pages de Alta Performance</title>
+    <title>Zayk Systems | Engenharia Web e Landing Pages Exclusivas</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts & FontAwesome para ícones -->
+    <!-- Google Fonts & FontAwesome -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Navegação Fixa -->
-    <header class="header">
-        <div class="logo-container">
-            <img src="assets/images/iconezayk.png" alt="Zayk Systems Ícone" class="logo-img">
-            <span class="logo-text">Zayk<span>Systems</span></span>
-        </div>
-        <nav class="nav">
-            <a href="#servicos">Serviços</a>
-            <a href="#planos">Planos</a>
-            <a href="#diferenciais">Diferenciais</a>
-            <a href="#contato" class="btn-cta-header">Orçamento</a>
-        </nav>
-    </header>
-
-    <!-- Hero Section com Vídeo Loop de Fundo -->
-    <section class="hero">
-        <div class="hero-video-bg">
-            <video autoplay muted loop playsinline>
-                <source src="assets/mp4/zaykloop.mp4" type="video/mp4">
-            </video>
-            <div class="video-overlay"></div>
-        </div>
-
-        <div class="hero-content">
-            <div class="hero-badge">
-                <i class="fa-solid fa-bolt"></i> Performance & Conversão Extrema
-            </div>
-            <h1>Elevamos sua marca ao topo com <span>Sites e Landing Pages</span> de Elite.</h1>
-            <p>Desenvolvemos ecossistemas digitais ultrarrápidos, com design futurista e focados em transformar visitantes em clientes fiéis.</p>
+    <!-- Primeira Dobra (Hero) -->
+    <section class="hero-interactive">
+        <div class="hero-top-content">
+            <img src="assets/images/mockups/logozayk.png" alt="Logo Zayk Systems" class="interactive-logo">
+            <img src="assets/images/mockups/mensagemtitulo.png" alt="Seu cliente está online. Sua marca também merece estar." class="interactive-title">
+            <img src="assets/images/mockups/subtitle.png" alt="Sites profissionais..." class="interactive-subtitle">
             
-            <div class="hero-actions">
-                <a href="#contato" class="btn-primary">
-                    <i class="fa-brands fa-whatsapp"></i> Iniciar Projeto
-                </a>
-                <a href="#servicos" class="btn-secondary">
-                    Ver Soluções <i class="fa-solid fa-arrow-down"></i>
-                </a>
-            </div>
+            <a href="https://wa.me/seunumeroaqui" target="_blank" class="interactive-btn-link" title="Vamos criar seu site">
+                <img src="assets/images/mockups/botãovamoscriarseusite.png" alt="Vamos criar seu site" class="interactive-btn">
+            </a>
+        </div>
 
-            <!-- Banner em Destaque com Vídeo Loop Integrado -->
-            <div class="hero-banner-container">
-                <img src="assets/images/bannerzayk.png" alt="Banner Zayk Systems" class="hero-banner-img">
-                <div class="banner-video-wrapper">
-                    <video autoplay muted loop playsinline class="banner-loop-video">
-                        <source src="assets/mp4/zaykbannerloop.mp4" type="video/mp4">
-                    </video>
+        <div class="hero-mockups-container">
+            <img src="assets/images/mockups/mockupodontológico.png" alt="Mockup Odontológico" class="mockup-item m-odontologico">
+            <img src="assets/images/mockups/cardwebrecortado.png" alt="Card Web" class="mockup-item m-cardweb">
+            <img src="assets/images/mockups/carddesiterecortado.png" alt="Card de Site Recortado" class="mockup-item m-carddesi">
+            <img src="assets/images/mockups/celularexibindositedearquitetura.png" alt="Celular Exibindo Site" class="mockup-item m-celular">
+        </div>
+    </section>
+
+    <!-- Slider Automático -->
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+                <div class="slider-slide">
+                    <img src="assets/images/cardretoarquitetura.png" alt="Card Arquitetura">
+                </div>
+                <div class="slider-slide">
+                    <img src="assets/images/cardretogastronomia.png" alt="Card Gastronomia">
+                </div>
+                <div class="slider-slide">
+                    <img src="assets/images/cardretoodontologia.png" alt="Card Odontologia">
                 </div>
             </div>
-
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <h3>+99</h3>
-                    <p>Google PageSpeed</p>
-                </div>
-                <div class="stat-item">
-                    <h3>3x</h3>
-                    <p>Mais Conversão</p>
-                </div>
-                <div class="stat-item">
-                    <h3>100%</h3>
-                    <p>Mobile Optimized</p>
-                </div>
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Serviços Principais -->
-    <section id="servicos" class="services">
+    <!-- Seção de Portfólio e Referências -->
+    <section id="portfolio" class="portfolio-showcase">
         <div class="section-title">
-            <h2>Nossas Soluções Especializadas</h2>
-            <p>O que construímos para acelerar o seu crescimento no ambiente digital</p>
+            <h2>Padrões de Elite Desenvolvidos para o seu <span>Sucesso Digital</span></h2>
+            <p>Explore abaixo estruturas exclusivas criadas para posicionar marcas no topo</p>
+        </div>
+
+        <div class="referencia-art-container">
+            <img src="assets/images/referências.png" alt="Referências de Sites Zayk Systems" class="referencia-img">
+            <a href="https://wa.me/seunumeroaqui" target="_blank" class="ref-target-btn" title="Vamos criar seu site"></a>
+        </div>
+    </section>
+
+    <!-- Seção de Diferenciais Técnicos -->
+    <section id="diferencial" class="services">
+        <div class="section-title">
+            <h2>Engenharia por Trás de Cada Projeto</h2>
+            <p>O que garante que a sua empresa tenha uma identidade única no digital</p>
         </div>
 
         <div class="services-grid">
             <div class="service-card">
-                <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
-                <h3>Landing Pages de Alta Conversão</h3>
-                <p>Páginas focadas estrategicamente em vendas, captura de leads, lançamentos ou apresentação de um serviço específico.</p>
+                <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Arquitetura Limpa</h3>
+                <p>Desenvolvemos sem templates genéricos. Cada linha de código é otimizada para máxima fluidez e segurança.</p>
             </div>
 
             <div class="service-card">
-                <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
-                <h3>Sites Institucionais Estáticos</h3>
-                <p>Websites de 3 a 5 páginas (Início, Sobre, Serviços, Galeria, Contato) estruturados para pequenos e médios negócios locais.</p>
+                <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3>Estética Imersiva</h3>
+                <p>Aplicamos conceitos visuais avançados, profundidade 3D e iluminação sutil que transmitem autoridade imediata.</p>
             </div>
 
             <div class="service-card">
-                <div class="card-icon"><i class="fa-solid fa-address-card"></i></div>
-                <h3>Cartão de Visitas Digital / Link na Bio</h3>
-                <p>Páginas estilo "Linktree" altamente profissionais, direcionadas a autônomos e criadores de conteúdo.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                <h3>Otimização e Mobile-First</h3>
-                <p>Adequação técnica completa de interfaces para garantir carregamento instantâneo em smartphones e tablets.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                <h3>Manutenção e Hospedagem</h3>
-                <p>Configuração de domínio próprio, infraestrutura de hospedagem segura e atualizações contínuas de conteúdo.</p>
+                <div class="card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <h3>Mobile-First Absoluto</h3>
+                <p>Projetamos interfaces focadas primariamente em touch e desempenho ultra-rápido em smartphones e tablets.</p>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Planos e Soluções -->
-    <section id="planos" class="pricing">
-        <div class="section-title">
-            <h2>Planos sob Medida</h2>
-            <p>Escolha a estrutura ideal para o estágio atual do seu negócio</p>
-        </div>
+    <!-- FAQ com Animação e Letras Menores -->
+    <section class="faq-section" id="faqSection">
+        <div class="faq-card-wrapper">
+            <div class="faq-header-tag">
+                <span class="faq-dot"></span>
+                <span class="faq-tag-text">ANTES DE DECIDIR</span>
+            </div>
+            <h2 class="faq-title">O que você precisa saber para começar.</h2>
+            <p class="faq-subtitle">Tire suas dúvidas e veja como acompanhamos seu projeto da ideia à entrega.</p>
 
-        <div class="pricing-grid">
-            <!-- Plano 1 -->
-            <div class="pricing-card">
-                <span class="plan-tag">Iniciante</span>
-                <h3>1. Essencial (Link na Bio)</h3>
-                <p class="target-audience"><strong>Público-alvo:</strong> Autônomos, influenciadores, pequenos comerciantes.</p>
-                <ul class="plan-features">
-                    <li><i class="fa-solid fa-check"></i> Página única responsiva</li>
-                    <li><i class="fa-solid fa-check"></i> Links para redes sociais e WhatsApp</li>
-                    <li><i class="fa-solid fa-check"></i> Mapa de localização integrado</li>
-                    <li><i class="fa-solid fa-check"></i> Galeria simples e design moderno</li>
-                </ul>
-                <div class="plan-footer">
-                    <span class="delivery-time"><i class="fa-regular fa-clock"></i> Prazo: 1 a 2 dias</span>
-                    <a href="#contato" class="btn-secondary">Contratar Plano</a>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Para quem é a Zayk Systems?</span>
+                        <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para empresas e profissionais que desejam posicionamento de alto padrão com foco total em conversão e autoridade.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quanto tempo leva para o site ficar pronto?</span>
+                        <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Entregamos seu projeto completo e otimizado com agilidade e prazos alinhados diretamente com você.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>O site funciona bem em celulares?</span>
+                        <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Desenvolvemos sob o conceito Mobile-First Absoluto para navegação leve e ultrarrápida no celular.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Preciso ter domínio e hospedagem próprios?</span>
+                        <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Configuraremos tudo para você em servidores de alta velocidade como a Vercel com segurança total.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como funciona a integração com WhatsApp?</span>
+                        <i class="fa-solid fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Adicionamos botões estratégicos de chamada para ação que levam o cliente diretamente ao seu atendimento.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Plano 2 -->
-            <div class="pricing-card featured">
-                <span class="plan-tag highlight">Mais Popular</span>
-                <h3>2. Profissional (Landing Page)</h3>
-                <p class="target-audience"><strong>Público-alvo:</strong> Prestadores de serviço, anunciantes (Google/Meta Ads).</p>
-                <ul class="plan-features">
-                    <li><i class="fa-solid fa-check"></i> Seções de Venda estruturadas (CTA)</li>
-                    <li><i class="fa-solid fa-check"></i> Depoimentos e Prova Social</li>
-                    <li><i class="fa-solid fa-check"></i> Seção de Dúvidas Frequentes (FAQ)</li>
-                    <li><i class="fa-solid fa-check"></i> Botão WhatsApp e Formulário de Leads</li>
-                    <li><i class="fa-solid fa-check"></i> Otimização de SEO Básico</li>
-                </ul>
-                <div class="plan-footer">
-                    <span class="delivery-time"><i class="fa-regular fa-clock"></i> Prazo: 3 a 5 dias</span>
-                    <a href="#contato" class="btn-primary">Contratar Plano</a>
-                </div>
+            <!-- Chamada de Vendas com Título em uma Linha e Botão Compacto -->
+            <div class="faq-cta-clean">
+                <h3 class="cta-single-line">Seu próximo projeto precisa virar venda.</h3>
+                <p>Entre em contato para posicionar sua marca no topo e converter mais visitantes.</p>
+                <a href="https://wa.me/seunumeroaqui" target="_blank" class="faq-cta-btn">Vamos criar seu site ↗</a>
             </div>
-
-            <!-- Plano 3 -->
-            <div class="pricing-card">
-                <span class="plan-tag">Completo</span>
-                <h3>3. Negócio Local (Site)</h3>
-                <p class="target-audience"><strong>Público-alvo:</strong> Clínicas, escritórios, restaurantes, empresas.</p>
-                <ul class="plan-features">
-                    <li><i class="fa-solid fa-check"></i> Até 5 páginas institucionais</li>
-                    <li><i class="fa-solid fa-check"></i> Mapa interativo avançado</li>
-                    <li><i class="fa-solid fa-check"></i> Certificado de Segurança SSL</li>
-                    <li><i class="fa-solid fa-check"></i> Animações visuais leves e fluidas</li>
-                    <li><i class="fa-solid fa-check"></i> Suporte técnico pós-entrega</li>
-                </ul>
-                <div class="plan-footer">
-                    <span class="delivery-time"><i class="fa-regular fa-clock"></i> Prazo: 5 a 8 dias</span>
-                    <a href="#contato" class="btn-secondary">Contratar Plano</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Contato -->
-    <section id="contato" class="contact">
-        <div class="contact-box">
-            <h2>Pronto para dominar o seu mercado?</h2>
-            <p>Fale diretamente com nossos especialistas e tenha sua landing page de alta performance no ar.</p>
-            <a href="https://wa.me/seunumeroaqui" target="_blank" class="btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp Agora
-            </a>
         </div>
     </section>
 
-    <!-- Rodapé -->
+    <!-- Rodapé Completo com a Logo PNG Zayk Systems -->
     <footer class="footer">
-        <p>&copy; 2026 Zayk Systems. Todos os direitos reservados.</p>
+        <div class="footer-brand">
+            <img src="assets/images/mockups/logozayk.png" alt="Zayk Systems Logo" class="footer-logo">
+        </div>
+        <p class="footer-copyright">&copy; 2026 Zayk Systems. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
